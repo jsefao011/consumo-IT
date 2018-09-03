@@ -3,6 +3,21 @@ namespace App\Entities\local2;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Entities\local2\SI_MAE_ENTIDAD
+ *
+ * @property int $p_mae_entidad
+ * @property string|null $no_entidad
+ * @property string|null $ruc_entidad
+ * @property int|null $f_mae_estado
+ * @property string|null $f_mae_ldap
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Entities\local2\SI_MAE_ENTIDAD whereFMaeEstado($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Entities\local2\SI_MAE_ENTIDAD whereFMaeLdap($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Entities\local2\SI_MAE_ENTIDAD whereNoEntidad($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Entities\local2\SI_MAE_ENTIDAD wherePMaeEntidad($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Entities\local2\SI_MAE_ENTIDAD whereRucEntidad($value)
+ * @mixin \Eloquent
+ */
 class SI_MAE_ENTIDAD extends Model
 {
     protected $table = 'si_mae_entidad';
