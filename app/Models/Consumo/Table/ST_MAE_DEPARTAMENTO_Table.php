@@ -1,15 +1,14 @@
 <?php
 
-namespace App\Entities\local2\table;
+namespace App\Models\Consumo\Table;
 
-class ST_MAE_ENCARGADO_Table
+class ST_MAE_DEPARTAMENTO_Table
 {
-    const TABLE = 'st_mae_encargado';
-    public static $ALL_COLUMN = ['p_mae_encargado','crg_encargado','f_mae_estado','f_mae_persona'];
-    const p_mae_encargado = 'p_mae_encargado';
-    const crg_encargado = 'crg_encargado';
-    const f_mae_estado = 'f_mae_estado';
-    const f_mae_persona = 'f_mae_persona';
+    const TABLE = 'st_mae_departamento';
+    public static $ALL_COLUMN = ['p_mae_departameto','nv_asinet_departamento','nv_zw_departamento'];
+    const p_mae_departameto = 'p_mae_departameto';
+    const nv_asinet_departamento = 'nv_asinet_departamento';
+    const nv_zw_departamento = 'nv_zw_departamento';
 
     public static function withTable($column){
           return self::TABLE.'.'.$column;

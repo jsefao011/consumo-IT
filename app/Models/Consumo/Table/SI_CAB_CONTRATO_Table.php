@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Entities\local2\table;
+namespace App\Models\Consumo\Table;
 
 class SI_CAB_CONTRATO_Table
 {

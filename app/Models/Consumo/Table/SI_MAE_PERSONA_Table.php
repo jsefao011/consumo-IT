@@ -1,19 +1,16 @@
 <?php
 
-namespace App\Entities\local2\table;
+namespace App\Models\Consumo\Table;
 
-class ST_MOV_SCAN_Table
+class SI_MAE_PERSONA_Table
 {
-    const TABLE = 'st_mov_scan';
-    public static $ALL_COLUMN = ['p_mov_scan','sub_scan','baj_scan','tim_inicio_scan','tim_fin_scan','f_mae_area','f_mae_mkt','f_mae_proveedor'];
-    const p_mov_scan = 'p_mov_scan';
-    const sub_scan = 'sub_scan';
-    const baj_scan = 'baj_scan';
-    const tim_inicio_scan = 'tim_inicio_scan';
-    const tim_fin_scan = 'tim_fin_scan';
-    const f_mae_area = 'f_mae_area';
-    const f_mae_mkt = 'f_mae_mkt';
-    const f_mae_proveedor = 'f_mae_proveedor';
+    const TABLE = 'si_mae_persona';
+    public static $ALL_COLUMN = ['p_mae_persona','no_persona','ap_persona','dni_persona','tlf_persona'];
+    const p_mae_persona = 'p_mae_persona';
+    const no_persona = 'no_persona';
+    const ap_persona = 'ap_persona';
+    const dni_persona = 'dni_persona';
+    const tlf_persona = 'tlf_persona';
 
     public static function withTable($column){
           return self::TABLE.'.'.$column;

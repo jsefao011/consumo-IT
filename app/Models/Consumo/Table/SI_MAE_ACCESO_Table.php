@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Entities\local2\table;
+namespace App\Models\Consumo\Table;
 
-class SI_MAE_ENTIDAD_Table
+class SI_MAE_ACCESO_Table
 {
-    const TABLE = 'si_mae_entidad';
-    public static $ALL_COLUMN = ['p_mae_entidad','no_entidad','ruc_entidad','f_mae_estado','f_mae_ldap'];
-    const p_mae_entidad = 'p_mae_entidad';
-    const no_entidad = 'no_entidad';
-    const ruc_entidad = 'ruc_entidad';
-    const f_mae_estado = 'f_mae_estado';
-    const f_mae_ldap = 'f_mae_ldap';
+    const TABLE = 'si_mae_acceso';
+    public static $ALL_COLUMN = ['p_mae_acceso','no_acceso','url_acceso','f_mae_acceso','ico_acceso'];
+    const p_mae_acceso = 'p_mae_acceso';
+    const no_acceso = 'no_acceso';
+    const url_acceso = 'url_acceso';
+    const f_mae_acceso = 'f_mae_acceso';
+    const ico_acceso = 'ico_acceso';
 
     public static function withTable($column){
           return self::TABLE.'.'.$column;

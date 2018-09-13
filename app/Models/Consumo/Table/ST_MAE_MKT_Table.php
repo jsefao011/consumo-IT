@@ -1,16 +1,17 @@
 <?php
 
-namespace App\Entities\local2\table;
+namespace App\Models\Consumo\Table;
 
-class SI_MAE_PERSONA_Table
+class ST_MAE_MKT_Table
 {
-    const TABLE = 'si_mae_persona';
-    public static $ALL_COLUMN = ['p_mae_persona','no_persona','ap_persona','dni_persona','tlf_persona'];
-    const p_mae_persona = 'p_mae_persona';
-    const no_persona = 'no_persona';
-    const ap_persona = 'ap_persona';
-    const dni_persona = 'dni_persona';
-    const tlf_persona = 'tlf_persona';
+    const TABLE = 'st_mae_mkt';
+    public static $ALL_COLUMN = ['p_mae_mkt','no_mkt','ip','us_mkt','psw_mkt','f_mae_estado'];
+    const p_mae_mkt = 'p_mae_mkt';
+    const no_mkt = 'no_mkt';
+    const ip = 'ip';
+    const us_mkt = 'us_mkt';
+    const psw_mkt = 'psw_mkt';
+    const f_mae_estado = 'f_mae_estado';
 
     public static function withTable($column){
           return self::TABLE.'.'.$column;

@@ -1,17 +1,21 @@
 <?php
 
-namespace App\Entities\local2\table;
+namespace App\Models\Consumo\Table;
 
-class SI_MAE_PROVEEDOR_Table
+class SI_MAE_AREA_Table
 {
-    const TABLE = 'si_mae_proveedor';
-    public static $ALL_COLUMN = ['p_mae_proveedor','no_proveedor','ruc_proveedor','dir_proveedor','tlf_proveedor','f_mae_estado'];
-    const p_mae_proveedor = 'p_mae_proveedor';
-    const no_proveedor = 'no_proveedor';
-    const ruc_proveedor = 'ruc_proveedor';
-    const dir_proveedor = 'dir_proveedor';
-    const tlf_proveedor = 'tlf_proveedor';
+    const TABLE = 'si_mae_area';
+    public static $ALL_COLUMN = ['p_mae_area','no_area','des_area','jerarquia','f_mae_encargado','f_mae_entidad','f_mae_estado','f_mae_area','f_mae_departameto','f_mae_mkt'];
+    const p_mae_area = 'p_mae_area';
+    const no_area = 'no_area';
+    const des_area = 'des_area';
+    const jerarquia = 'jerarquia';
+    const f_mae_encargado = 'f_mae_encargado';
+    const f_mae_entidad = 'f_mae_entidad';
     const f_mae_estado = 'f_mae_estado';
+    const f_mae_area = 'f_mae_area';
+    const f_mae_departameto = 'f_mae_departameto';
+    const f_mae_mkt = 'f_mae_mkt';
 
     public static function withTable($column){
           return self::TABLE.'.'.$column;

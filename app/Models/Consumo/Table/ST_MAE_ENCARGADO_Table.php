@@ -1,13 +1,15 @@
 <?php
 
-namespace App\Entities\local2\table;
+namespace App\Models\Consumo\Table;
 
-class SI_MAE_LDAP_Table
+class ST_MAE_ENCARGADO_Table
 {
-    const TABLE = 'si_mae_ldap';
-    public static $ALL_COLUMN = ['p_mae_ldap','flt_ldap'];
-    const p_mae_ldap = 'p_mae_ldap';
-    const flt_ldap = 'flt_ldap';
+    const TABLE = 'st_mae_encargado';
+    public static $ALL_COLUMN = ['p_mae_encargado','crg_encargado','f_mae_estado','f_mae_persona'];
+    const p_mae_encargado = 'p_mae_encargado';
+    const crg_encargado = 'crg_encargado';
+    const f_mae_estado = 'f_mae_estado';
+    const f_mae_persona = 'f_mae_persona';
 
     public static function withTable($column){
           return self::TABLE.'.'.$column;

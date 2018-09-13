@@ -1,16 +1,13 @@
 <?php
 
-namespace App\Entities\local2\table;
+namespace App\Models\Consumo\Table;
 
-class ST_MAE_MKT_Table
+class ST_MAE_ACTIVO_Table
 {
-    const TABLE = 'st_mae_mkt';
-    public static $ALL_COLUMN = ['p_mae_mkt','no_mkt','ip','us_mkt','psw_mkt','f_mae_estado'];
-    const p_mae_mkt = 'p_mae_mkt';
-    const no_mkt = 'no_mkt';
-    const ip = 'ip';
-    const us_mkt = 'us_mkt';
-    const psw_mkt = 'psw_mkt';
+    const TABLE = 'st_mae_activo';
+    public static $ALL_COLUMN = ['p_mae_activo','des_activo','f_mae_estado'];
+    const p_mae_activo = 'p_mae_activo';
+    const des_activo = 'des_activo';
     const f_mae_estado = 'f_mae_estado';
 
     public static function withTable($column){

@@ -1,16 +1,14 @@
 <?php
 
-namespace App\Entities\local2\table;
+namespace App\Models\Consumo\Table;
 
-class SI_MAE_ACCESO_Table
+class SI_REL_EMPLEADO_Table
 {
-    const TABLE = 'si_mae_acceso';
-    public static $ALL_COLUMN = ['p_mae_acceso','no_acceso','url_acceso','f_mae_acceso','ico_acceso'];
-    const p_mae_acceso = 'p_mae_acceso';
-    const no_acceso = 'no_acceso';
-    const url_acceso = 'url_acceso';
-    const f_mae_acceso = 'f_mae_acceso';
-    const ico_acceso = 'ico_acceso';
+    const TABLE = 'si_rel_empleado';
+    public static $ALL_COLUMN = ['f_mae_persona','f_mae_entidad','f_mae_grupo'];
+    const f_mae_persona = 'f_mae_persona';
+    const f_mae_entidad = 'f_mae_entidad';
+    const f_mae_grupo = 'f_mae_grupo';
 
     public static function withTable($column){
           return self::TABLE.'.'.$column;

@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Entities\local2\table;
+namespace App\Models\Consumo\Table;
 
-class ST_MAE_DEPARTAMENTO_Table
+class ST_MAE_PERIODO_Table
 {
-    const TABLE = 'st_mae_departamento';
-    public static $ALL_COLUMN = ['p_mae_departameto','nv_asinet_departamento','nv_zw_departamento'];
-    const p_mae_departameto = 'p_mae_departameto';
-    const nv_asinet_departamento = 'nv_asinet_departamento';
-    const nv_zw_departamento = 'nv_zw_departamento';
+    const TABLE = 'st_mae_periodo';
+    public static $ALL_COLUMN = ['p_mae_periodo','no_periodo','ci_perido'];
+    const p_mae_periodo = 'p_mae_periodo';
+    const no_periodo = 'no_periodo';
+    const ci_perido = 'ci_perido';
 
     public static function withTable($column){
           return self::TABLE.'.'.$column;
