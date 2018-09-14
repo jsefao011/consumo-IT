@@ -89,12 +89,12 @@ class MakeModelsTableCommand extends Command
 
         $columns = implode("','",$columnsArray);
 
-        $nombre_archivo = app_path()."/Models/consumo/".strtoupper($table).".php";
+        $nombre_archivo = app_path()."/Data/Consumo/".strtoupper($table).".php";
 
         if($archivo = fopen($nombre_archivo, "a"))
         {
             fwrite($archivo, "<?php\n");
-            fwrite($archivo, "namespace App\Entities\local2;\n");
+            fwrite($archivo, "namespace App\Data\Consumo;\n");
             fwrite($archivo, "\n");
             fwrite($archivo, "use Illuminate\Database\Eloquent\Model;\n");
             fwrite($archivo, "\n");

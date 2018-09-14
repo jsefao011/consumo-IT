@@ -106,11 +106,11 @@ class MakeModelsCommand extends Command
 
         $columns = implode("','",$columnsArray);
 
-        $nombre_archivo = app_path()."/Models/consumo/table/".strtoupper($table)."_Table.php";
+        $nombre_archivo = app_path()."/Data/Consumo/Table/".strtoupper($table)."_Table.php";
         if($archivo = fopen($nombre_archivo, "a")) {
             fwrite($archivo, "<?php\n");
             fwrite($archivo, "\n");
-            fwrite($archivo, "namespace App\Entities\local2\\table;\n");
+            fwrite($archivo, "namespace App\Data\Consumo\\Table;\n");
             fwrite($archivo, "\n");
             fwrite($archivo, "class ".strtoupper($table)."_Table\n");
             fwrite($archivo, "{\n");
